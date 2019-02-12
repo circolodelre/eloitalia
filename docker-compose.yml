@@ -10,9 +10,9 @@ services:
       - 13080:80
     volumes:
       - ./env/dev/wp-config.php:/usr/src/wordpress/wp-config-sample.php
-      - ./theme:/var/www/volumes/wp-content/themes/theme:rw
-      - ./plugin:/var/www/volumes/wp-content/plugins/plugin:rw
-      - ./volumes/wp-content:/var/www/volumes/wp-content:rw
+      - ./theme:/var/www/html/wp-content/themes/theme:rw
+      - ./plugin:/var/www/html/wp-content/plugins/plugin:rw
+      - ./public/wp-content:var/www/html/wp-content:rw
       - ./vendor:/var/www/vendor:rw
     restart: "no"
 

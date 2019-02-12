@@ -1,11 +1,11 @@
 .idea/
 vendor/
-wordpress/
+public/wp/
 
 volumes/mysql/
 !volumes/mysql/.gitkeep
 
-public/data/
-!public/data/themes/.gitkeep
-!public/data/plugins/.gitkeep
-!public/data/uploads/.gitkeep
+public/wp-content/
+!public/wp-content/themes/.gitkeep
+!public/wp-content/plugins/.gitkeep
+!public/wp-content/uploads/.gitkeep
