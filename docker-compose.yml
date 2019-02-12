@@ -12,7 +12,7 @@ services:
       - ./env/dev/wp-config.php:/usr/src/wordpress/wp-config-sample.php
       - ./theme:/var/www/html/wp-content/themes/theme:rw
       - ./plugin:/var/www/html/wp-content/plugins/plugin:rw
-      - ./public/wp-content:var/www/html/wp-content:rw
+      - ./public/wp-content:/var/www/html/wp-content:rw
       - ./vendor:/var/www/vendor:rw
     restart: "no"
 
