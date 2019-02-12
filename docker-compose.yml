@@ -3,15 +3,16 @@ version: '3.1'
 services:
 
   wordpress:
-    image: wordpress
+    image: wordpress:5.0.3
     environment:
       - WORDPRESS_DB_PASSWORD=wordpress
     ports:
       - 13080:80
     volumes:
-      - ./env/development/wp-config.php:/usr/src/wordpress/wp-config-sample.php
+      - ./env/dev/wp-config.php:/usr/src/wordpress/wp-config-sample.php
       - ./theme:/var/www/volumes/wp-content/themes/theme:rw
       - ./plugin:/var/www/volumes/wp-content/plugins/plugin:rw
+      - ./volumes/wp-content:/var/www/volumes/wp-content:rw
       - ./vendor:/var/www/vendor:rw
     restart: "no"
 
