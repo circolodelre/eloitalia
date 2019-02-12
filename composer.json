@@ -23,6 +23,7 @@
     "squizlabs/php_codesniffer": "^2.8.0"
   },
   "extra": {
+    "wordpress-install-dir": "public/wp",
     "installer-paths": {
       "volumes/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
       "volumes/wp-content/themes/{$name}/": ["type:wordpress-theme"]

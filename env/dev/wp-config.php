@@ -38,7 +38,7 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 /** The wp-content directory patch. */
-define('WP_CONTENT_DIR', __DIR__ . '/../volumes/wp-content');
+define('WP_CONTENT_DIR', __DIR__ . '/../data');
 
 /**#@+
  * Authentication Unique Keys and Salts.
